@@ -1,0 +1,9 @@
+<template name="musicTemplate">
+  <view class="sunshine" >
+    <view class="sunshine-music" >
+        <image wx:for="{{temp.arr}}" wx:key="{{index}}" src="{{ item }}" class="content"></image>  
+    </view>
+    <view class="info">{{ temp.title }}</view>
+    <view class="num">3000人关注</view>
+  </view>
+</template>

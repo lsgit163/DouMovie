@@ -1,0 +1,23 @@
+<import src="mukuai-template/mukuai-template.wxml" />
+<view class="index-container container">
+  <view class="index-top">
+    <view class="index-recommend" bindtap='musicHandler' data-type="今日推荐">
+      <view class="info">
+        <text class='time'>{{year}}.{{month}}</text>
+        <text class="day">{{day}}</text>
+      </view>
+      <text class="today-recommend">今日推荐</text>
+    </view>
+    <view class="index-circle" bindtap='musicHandler' data-type="朋友圈">
+      <view class="info">
+        <text class='share'>朋友圈</text>
+      </view>
+      <text class="firend-circle">朋友圈歌曲</text>
+    </view>
+  </view>
+
+  <template is="musicTemplate" data="{{temp:imgs1}}" ></template>
+  <template is="musicTemplate" data="{{temp:imgs2}}"  ></template>
+  <template is="musicTemplate" data="{{temp:imgs3}}"  ></template>
+
+</view>
